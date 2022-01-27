@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6a8d93a3.css",
+    "main.js": "/static/js/main.007df492.js",
+    "static/media/yash.jpeg": "/static/media/yash.7ccc504974be7cb8ac60.jpeg",
+    "static/media/subhanshu.jpeg": "/static/media/subhanshu.902196bfe0baa8935712.jpeg",
+    "static/media/detcherLogo.png": "/static/media/detcherLogo.a0130b808399ed109557.png",
+    "static/media/suraj.jpeg": "/static/media/suraj.c77a834f7ea7c7cb38b1.jpeg",
+    "index.html": "/index.html",
+    "main.6a8d93a3.css.map": "/static/css/main.6a8d93a3.css.map",
+    "main.007df492.js.map": "/static/js/main.007df492.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6a8d93a3.css",
+    "static/js/main.007df492.js"
+  ]
+}

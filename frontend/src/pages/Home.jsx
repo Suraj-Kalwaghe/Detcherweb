@@ -61,7 +61,7 @@ export const Home = () => {
             <h4 className='text-slate-600 font-medium text-2xl text-center'>
               Providing customized solutions in Electronics, Automation, Robotics, etc.
               <br />
-              We In-House state of the art technology for making an efficient solution for our clients.
+              We In-House state of the art technology for providing efficient solution to our clients.
               
             </h4>
           </div>

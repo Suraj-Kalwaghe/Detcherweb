@@ -8,19 +8,17 @@ export const Portfolio = () => {
       <section className='max-h-screen'>
         <Container>
           <HeroSectionContainer>
-            <div className='w-8/12 mb-20 mt-32 relative'>
-              <h1 className='text-center bg-clip-text text-transparent bg-gradient-to-br from-slate-900 to-indigo-900 pb-2.5 mb-7'>
-                Developing the best <br /> for our users
+            <div className='xl:w-8/12 lg:w-full md:w-4/5 w-full lg:mb-20 md:mb-14 md:mt-32 mt-20 mb-10 relative'>
+              <h1 className='lg:text-7xl md:text-5xl text-4xl font-black text-center bg-clip-text text-transparent bg-gradient-to-br from-slate-900 to-indigo-900 pb-2.5 lg:mb-7 md:mb-5 mb-2'>
+                Developing the best for our users
               </h1>
-              <h4 className='text-slate-600 font-medium text-2xl text-center'>
+              <h4 className='text-slate-600 font-medium lg:text-2xl text-xl text-center'>
                 Some big subtitle describing what the company is about or a
-                motto.
-                <br />
-                This could be a long one to take up some positive space in the
-                sub header.
+                motto. This could be a long one to take up some positive space
+                in the sub header.
               </h4>
             </div>
-            <button className='mt-36 animate-bounce'>
+            <button className='lg:mt-20 md:mt-16 mt-12 animate-bounce'>
               <svg
                 className='h-10'
                 // width='40'

@@ -15,7 +15,7 @@ export const Home = () => {
         <img
           src={suraj}
           alt='profilePic'
-          class='w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 bg-opacity-10'
+          class='lg:w-20 w-14 lg:h-20 h-14 lg:mb-8 mb-4 object-cover object-center rounded-full inline-block border-2 bg-opacity-10'
           id='Sooraj'
         />
       ),
@@ -28,7 +28,7 @@ export const Home = () => {
         <img
           src={subhanshu}
           alt='profilePic'
-          class='w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 bg-opacity-10'
+          class='lg:w-20 w-14 lg:h-20 h-14 lg:mb-8 mb-4 object-cover object-center rounded-full inline-block border-2 bg-opacity-1'
           id='Subhanshu'
         />
       ),
@@ -42,7 +42,7 @@ export const Home = () => {
         <img
           src={yash}
           alt='profilePic'
-          class='w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 bg-opacity-10'
+          class='lg:w-20 w-14 lg:h-20 h-14 lg:mb-8 mb-4 object-cover object-center rounded-full inline-block border-2 bg-opacity-1'
           id='yash'
         />
       ),
@@ -53,21 +53,20 @@ export const Home = () => {
   return (
     <Container>
       <HeroSectionContainer>
-        <div className='w-8/12 mb-20 mt-32 relative'>
-          <div className='z-50 relative'>
-            <h1 className='text-center bg-clip-text text-transparent bg-gradient-to-br from-slate-900 to-cyan-900 pb-2.5 mb-7'>
+        <div className='xl:w-8/12 lg:w-full md:w-4/5 w-full lg:mb-20 md:mb-14 md:mt-32 mt-20 mb-10 relative'>
+          <div className='z-40 relative'>
+            <h1 className='lg:text-7xl md:text-5xl text-4xl font-black text-center bg-clip-text text-transparent bg-gradient-to-br from-slate-900 to-cyan-900 pb-2.5 lg:mb-7 md:mb-5 mb-2'>
               Short motto of company lorem ipsum something
             </h1>
-            <h4 className='text-slate-600 font-medium text-2xl text-center'>
+            <h4 className='text-slate-600 font-medium lg:text-2xl text-xl text-center'>
               Some big subtitle describing what the company is about or a motto.
-              <br />
               This could be a long one to take up some positive space in the sub
               header.
             </h4>
           </div>
           <svg
             id={styles.moveUpDown}
-            className='absolute -top-20 h-64 z-10'
+            className='absolute md:-top-20 -top-7 lg:h-64 md:h-48 h-32 z-10'
             // width='258'
             // height='293'
             viewBox='0 0 258 293'
@@ -80,7 +79,7 @@ export const Home = () => {
           </svg>
           <svg
             id={styles.moveUpDown100}
-            className='absolute bottom-0 right-12 h-36 z-10'
+            className='absolute bottom-0 md:right-12 right-3 lg:h-36 md:h-20 h-14 z-10'
             // width='193'
             // height='143'
             viewBox='0 0 193 143'
@@ -92,17 +91,16 @@ export const Home = () => {
             />
           </svg>
         </div>
-        <div className='bg-slate-200 h-px w-8/12'></div>
+        <div className='bg-slate-200 h-px xl:w-8/12 lg:w-full md:w-4/5 w-full'></div>
         <section class='text-gray-400 text-base'>
-          <div class='container px-5 py-24 mx-auto'>
-            <div class='flex flex-wrap -m-4'>
+          <div class='container lg:px-5 px-2.5 lg:py-24 py-12 mx-auto'>
+            <div class='flex flex-wrap -m-4 md:justify-center'>
               {profileCardData.map(profile => (
                 <div class='lg:w-1/3 lg:mb-0 mb-6 p-4'>
                   <div class='h-full text-center'>
                     {profile.profilePic}
-
                     <p class='leading-relaxed'>{profile.quote}</p>
-                    <span class='inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4'></span>
+                    <span class='inline-block h-1 w-10 rounded bg-indigo-500 lg:mt-6 mt-3 lg:mb-4 mb-2'></span>
                     <h2 class='font-medium title-font tracking-wider text-sm'>
                       {profile.name}
                     </h2>
@@ -113,7 +111,7 @@ export const Home = () => {
             </div>
           </div>
         </section>
-        <button className='mt-36 animate-bounce'>
+        <button className='lg:mt-20 md:mt-16 mt-12 animate-bounce'>
           <svg
             className='h-10'
             // width='40'

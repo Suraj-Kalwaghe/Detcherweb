@@ -7,22 +7,19 @@ export const AboutUs = () => {
     <section className='max-h-screen'>
       <Container>
         <HeroSectionContainer>
-          <div className='w-8/12 mb-20 mt-32 relative'>
-            <div className='z-50 relative'>
-              <h1 className='text-center bg-clip-text text-transparent bg-gradient-to-br from-slate-900 to-fuchsia-900 pb-2.5 mb-7'>
-                A good catch phrase <br />
-                with context
+          <div className='xl:w-8/12 lg:w-full md:w-4/5 w-full lg:mb-20 md:mb-14 md:mt-32 mt-20 mb-10 relative'>
+            <div className='z-40 relative'>
+              <h1 className='lg:text-7xl md:text-5xl text-4xl font-black text-center bg-clip-text text-transparent bg-gradient-to-br from-slate-900 to-fuchsia-900 pb-2.5 lg:mb-7 md:mb-5 mb-2'>
+                A good catch phrase with context
               </h1>
-              <h4 className='text-slate-600 font-medium text-2xl text-center'>
+              <h4 className='text-slate-600 font-medium lg:text-2xl text-xl text-center'>
                 Some big subtitle describing what the company is about or a
-                motto.
-                <br />
-                This could be a long one to take up some positive space in the
-                sub header.
+                motto. This could be a long one to take up some positive space
+                in the sub header.
               </h4>
             </div>
             <svg
-              className='absolute -top-20 left-[10%] h-64 z-10'
+              className='absolute md:-top-20 -top-7 lg:left-5 lg:h-64 md:h-48 h-32 z-10'
               // width='120'
               // height='240'
               viewBox='0 0 120 240'
@@ -606,7 +603,7 @@ export const AboutUs = () => {
               />
             </svg>
             <svg
-              className='absolute -bottom-20 right-[10%] h-64 z-10'
+              className='absolute bottom-0 md:right-12 right-3 lg:h-64 md:h-48 h-32 z-10'
               // width='120'
               // height='240'
               viewBox='0 0 120 240'
@@ -1190,7 +1187,7 @@ export const AboutUs = () => {
               />
             </svg>
           </div>
-          <button className='mt-36 animate-bounce'>
+          <button className='lg:mt-20 md:mt-16 mt-12 animate-bounce'>
             <svg
               className='h-10'
               // width='40'

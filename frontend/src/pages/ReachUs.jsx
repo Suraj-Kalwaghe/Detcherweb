@@ -33,7 +33,7 @@ export const ReachUs = () => {
 
   return (
     <Container>
-      <div className='grid grid-cols-3 space-x-5 2xl:my-32 my-24'>
+      <div className='grid lg:grid-cols-3 grid-cols-none lg:grid-rows-none grid-rows-2 lg:space-x-5 lg:space-y-0 md:space-y-20 space-y-40 2xl:my-32 lg:my-24 my-4 lg:mb-0 mb-14'>
         <div className='col-span-2 border border-slate-200 rounded-2xl relative'>
           <iframe
             className='h-full w-full rounded-2xl'
@@ -46,17 +46,17 @@ export const ReachUs = () => {
             scrolling='no'
             style={customFilter}
             src='https://maps.google.com/maps?q=SKNCOE,Pune&t=&z=13&ie=UTF8&iwloc=&output=embed'></iframe>
-          <div className='bg-white relative flex flex-wrap py-5 px-7 shadow-xl -top-40 w-5/6 m-auto border border-slate-200 rounded-2xl'>
-            <div className='grid grid-cols-2 w-full space-x-5'>
-              <div className='text-lg'>
+          <div className='bg-white relative flex flex-wrap lg:py-5 py-2.5 lg:px-7 md:px-5 px-3 shadow-xl lg:-top-40 -top-32 md:w-5/6 w-11/12 m-auto border border-slate-200 rounded-2xl'>
+            <div className='md:grid md:grid-cols-2 w-full md:space-x-5'>
+              <div className='lg:text-lg text-base md:mb-0 mb-4'>
                 <h4 className='text-slate-500 font-bold uppercase'>Address</h4>
                 <p className='text-slate-700 font-medium'>
                   Programming Lab, Smt Kashibai navale College of Engineering,
                   Pune
                 </p>
               </div>
-              <div className='grid grid-rows-2 space-y-5'>
-                <div className='text-lg'>
+              <div className='md:grid md:grid-rows-2 md:space-y-5'>
+                <div className='lg:text-lg text-base md:mb-0 mb-4'>
                   <h4 className='text-slate-500 font-bold uppercase'>Email</h4>
                   <a
                     rel='noreferrer'
@@ -66,7 +66,7 @@ export const ReachUs = () => {
                     support@detcher.com
                   </a>
                 </div>
-                <div className='text-lg'>
+                <div className='lg:text-lg text-base'>
                   <h4 className='text-slate-500 font-bold uppercase'>Phone</h4>
                   <p className='text-slate-700 font-medium'>9561247091</p>
                 </div>
@@ -74,7 +74,7 @@ export const ReachUs = () => {
             </div>
           </div>
         </div>
-        <div className='col-span-1 border border-slate-200 rounded-2xl px-7 py-5'>
+        <div className='lg:col-span-1 col-span-2 border border-slate-200 rounded-2xl md:px-7 px-4 md:py-5 py-3 w-full'>
           <div className='flex flex-col md:ml-auto w-full'>
             <h2 className='text-slate-700 text-xl mb-1 font-bold'>Feedback</h2>
             <p className='text-lg font-medium mb-5 text-slate-500'>
@@ -130,7 +130,7 @@ export const ReachUs = () => {
               </div>
               <button
                 onClick={handleForm}
-                className='text-white bg-indigo-500 border-0 py-3.5 px-6 focus:outline-none hover:bg-indigo-600 rounded-md font-bold text-lg'>
+                className='text-white bg-indigo-500 border-0 md:py-3.5 py-3 px-6 focus:outline-none hover:bg-indigo-600 rounded-md font-bold text-lg'>
                 Submit
               </button>
             </div>

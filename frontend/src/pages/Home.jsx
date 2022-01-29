@@ -56,13 +56,13 @@ export const Home = () => {
         <div className='w-8/12 mb-20 mt-32 relative'>
           <div className='z-50 relative'>
             <h1 className='text-center bg-clip-text text-transparent bg-gradient-to-br from-slate-900 to-cyan-900 pb-2.5 mb-7'>
-              Short motto of company lorem ipsum something
+              Offering world class services to our clients
             </h1>
             <h4 className='text-slate-600 font-medium text-2xl text-center'>
-              Some big subtitle describing what the company is about or a motto.
+              Providing customized solutions in Electronics, Automation, Robotics, etc.
               <br />
-              This could be a long one to take up some positive space in the sub
-              header.
+              We In-House state of the art technology for making an efficient solution for our clients.
+              
             </h4>
           </div>
           <svg

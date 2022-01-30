@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+
 import detcherLogo from '../static/detcherLogo.png';
 
 export const Navbar = ({ isOpen, toggle }) => {
@@ -66,17 +67,17 @@ export const Navbar = ({ isOpen, toggle }) => {
           <div
             className={
               isOpen
-                ? 'flex lg:flex-row flex-col lg:space-x-8 lg:space-y-0 space-y-2 lg:items-center lg:ml-0 ml-2'
+                ? 'flex lg:flex-row flex-col lg:space-x-8 lg:items-center lg:ml-0 ml-2'
                 : 'hidden'
             }>
             {navItems.map(navLink => (
               <NavLink
-                onClick={toggle}
+                onClick={window.innerWidth < 1024 ? toggle : undefined}
                 to={navLink.link}
                 className={({ isActive }) =>
                   isActive
-                    ? 'border-b-2 border-indigo-500 text-slate-900 flex items-center'
-                    : 'text-slate-500 mb-0.5 flex items-center'
+                    ? 'border-b-2 border-indigo-500 text-slate-900 lg:mb-0 mb-2 flex items-center'
+                    : 'text-slate-500 flex lg:mb-0.5 mb-2 items-center'
                 }>
                 {navLink.name}
               </NavLink>
@@ -105,16 +106,15 @@ export const Navbar = ({ isOpen, toggle }) => {
               />
             </svg>
           </div>
-          <a
-            href='https://forms.gle/1fFKhiPpFH452hvNA'
-            target={'_blank'}
-            rel='noreferrer'>
-            <button className='bg-blue-600 text-white lg:px-9 px-4 lg:py-2 py-1 rounded-full'>
-              <span className='font-medium lg:text-lg text-sm m-auto'>
-                Apply
-              </span>
-            </button>
-          </a>
+          <NavLink
+            className={({ isActive }) =>
+              isActive
+                ? 'shadow-lg shadow-blue-300 bg-blue-700 text-white lg:px-9 px-4 lg:py-2 py-1 rounded-full hover:shadow-blue-300 transition-shadow duration-150 ease-in-out'
+                : 'bg-blue-600 text-white lg:px-9 px-4 lg:py-2 py-1 rounded-full hover:shadow-md hover:shadow-blue-300 transition-shadow duration-150 ease-in-out'
+            }
+            to='/apply'>
+            <span className='font-medium lg:text-lg text-sm m-auto'>Apply</span>
+          </NavLink>
         </div>
       </div>
     </nav>

@@ -1,8 +1,8 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
+import { Routes, Route, Navigate } from 'react-router-dom';
 
-import { Routes, Route } from 'react-router-dom';
-
-import { Home, Portfolio, Activities, AboutUs, ReachUs } from './pages';
+import { Home, Portfolio, Activities, AboutUs, ReachUs, Apply } from './pages';
 import { Navbar } from './components';
 
 export default function App() {
@@ -33,15 +33,20 @@ export default function App() {
 
   return (
     <div className='min-h-screen bg-white text-gray-900 font-redHatDisplay'>
+      <Helmet>
+        <title>Detcher Tech Co.</title>
+      </Helmet>
       <header className='flex flex-col items-center'>
         <Navbar toggle={toggle} isOpen={navIsOpen} />
       </header>
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/index.html/' element={<Navigate replace to='/' />} />
+        <Route exact path='/' element={<Home />} />
         <Route path='/portfolio' element={<Portfolio />} />
         <Route path='/activities' element={<Activities />} />
         <Route path='/about-us' element={<AboutUs />} />
         <Route path='/reach-us' element={<ReachUs />} />
+        <Route path='/apply' element={<Apply />} />
       </Routes>
     </div>
   );

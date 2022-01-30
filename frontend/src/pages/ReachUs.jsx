@@ -33,7 +33,7 @@ export const ReachUs = () => {
 
   return (
     <Container>
-      <div className='grid lg:grid-cols-3 grid-cols-none lg:grid-rows-none grid-rows-2 lg:space-x-5 lg:space-y-0 md:space-y-20 space-y-40 2xl:my-32 lg:my-24 my-4 lg:mb-0 mb-14'>
+      <div className='grid lg:grid-cols-3 grid-cols-none lg:grid-rows-none grid-rows-2 lg:space-x-5 lg:space-y-0 md:space-y-20 space-y-40 xl:my-12 lg:my-24 my-4 lg:mb-0 mb-14'>
         <div className='col-span-2 border border-slate-200 rounded-2xl relative'>
           <iframe
             className='h-full w-full rounded-2xl'
@@ -94,7 +94,7 @@ export const ReachUs = () => {
                   type='text'
                   id='name'
                   name='name'
-                  className='w-full rounded-md text-lg border border-slate-200 focus:border-indigo-200 focus:ring-2 focus:ring-indigo-200 outline-none text-slate-700 font-medium py-1.5 px-2.5 transition-colors duration-200 ease-in-out'
+                  className='w-full rounded-md text-lg border border-slate-200 focus:border-indigo-300 focus:ring-2 focus:ring-indigo-300 outline-none text-slate-700 font-medium py-1.5 px-2.5 transition-colors duration-200 ease-in-out'
                   required
                 />
               </div>
@@ -110,7 +110,7 @@ export const ReachUs = () => {
                   type='email'
                   id='email'
                   name='email'
-                  className='w-full rounded-md text-lg border border-slate-200 focus:border-indigo-200 focus:ring-2 focus:ring-indigo-200 outline-none text-slate-700 font-medium py-1.5 px-2.5 transition-colors duration-200 ease-in-out'
+                  className='w-full rounded-md text-lg border border-slate-200 focus:border-indigo-300 focus:ring-2 focus:ring-indigo-300 outline-none text-slate-700 font-medium py-1.5 px-2.5 transition-colors duration-200 ease-in-out'
                   required
                 />
               </div>
@@ -125,7 +125,7 @@ export const ReachUs = () => {
                   value={message}
                   id='message'
                   name='message'
-                  className='w-full rounded-md text-lg border border-slate-200 focus:border-indigo-200 focus:ring-2 focus:ring-indigo-200 h-32 outline-none text-slate-700 font-medium py-1.5 px-2.5 resize-none transition-colors duration-200 ease-in-out'
+                  className='w-full rounded-md text-lg border border-slate-200 focus:border-indigo-300 focus:ring-2 focus:ring-indigo-300 h-32 outline-none text-slate-700 font-medium py-1.5 px-2.5 resize-none transition-colors duration-200 ease-in-out'
                   required></textarea>
               </div>
               <button

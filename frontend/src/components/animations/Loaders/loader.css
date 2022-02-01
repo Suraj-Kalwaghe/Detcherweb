@@ -1,0 +1,101 @@
+.twitchLoader {
+  width: 100px;
+  transform: rotate(-45deg);
+}
+.twitchLoader .cube {
+  height: 20px;
+  width: 20px;
+  margin: 15px;
+  background-color: #c4becb;
+  float: right;
+  opacity: 0;
+  outline: 1px solid transparent;
+}
+.twitchLoader .cube:nth-child(1) {
+  background-color: #6441a4;
+  animation: purpleAnim 2s infinite 0.55s;
+  position: fixed;
+}
+.twitchLoader .cube:nth-child(2) {
+  animation: cubeAnim1 2s infinite cubic-bezier(0.4, 0, 0.2, 1) 0.26s;
+}
+.twitchLoader .cube:nth-child(3) {
+  animation: cubeAnim4 2s infinite cubic-bezier(0.4, 0, 0.2, 1) 1.755s;
+}
+.twitchLoader .cube:nth-child(4) {
+  animation: cubeAnim2 2s infinite cubic-bezier(0.4, 0, 0.2, 1) 0.741s;
+}
+.twitchLoader .cube:nth-child(5) {
+  animation: cubeAnim3 2s infinite cubic-bezier(0.4, 0, 0.2, 1) 1.235s;
+}
+@keyframes cubeAnim1 {
+  0% {
+    opacity: 0;
+    transform: translate(0, -50px);
+  }
+  40% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes cubeAnim2 {
+  0% {
+    opacity: 0;
+    transform: translate(50px, 0);
+  }
+  40% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes cubeAnim3 {
+  0% {
+    opacity: 0;
+    transform: translate(0, 50px);
+  }
+  40% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes cubeAnim4 {
+  0% {
+    opacity: 0;
+    transform: translate(-50px, 0);
+  }
+  40% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes purpleAnim {
+  0% {
+    transform: translate(50px, 0px);
+    opacity: 1;
+  }
+  25% {
+    transform: translate(50px, 50px);
+  }
+  50% {
+    transform: translate(0px, 50px);
+  }
+  75% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(50px, 0px);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,24 @@
+.customContainer1 {
+  width: 500px;
+  display: inline-block;
+  transform: translateY(200px);
+}
+.bar {
+  background: #ffffff;
+  width: 10px;
+  height: 100px;
+}
+.bar1 {
+  float: left;
+}
+.bar2 {
+  float: right;
+}
+.ball {
+  background: #ffffff;
+  width: 10px;
+  height: 10px;
+  position: relative;
+  top: 45px;
+  left: 10px;
+}

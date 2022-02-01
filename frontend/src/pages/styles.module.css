@@ -42,30 +42,3 @@
     transform: translateY(8%);
   }
 }
-
-.Activitycontainer {
-  display: flex;
-  width: 1420px;
-  height: 1000px;
-  left: 250px;
-  top: 80px;
-}
-.spinwheel {
-  width: 700px;
-  height: 490px;
-  left: 250px;
-  top: 80px;
-  border: 1px solid #0f172a;
-  box-sizing: border-box;
-  border-radius: 25px;
-}
-.Miniclip {
-  position: absolute;
-  width: 700px;
-  height: 490px;
-  left: 970px;
-  top: 80px;
-  border: 1px solid #0f172a;
-  box-sizing: border-box;
-  border-radius: 25px;
-}

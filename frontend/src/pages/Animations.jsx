@@ -7,16 +7,18 @@ import {
   ProfilePop,
   ParticlesJS,
   Waves,
+  RunAwayButton,
 } from '../components';
 
 export const Animations = () => {
   return (
-    <div>
-      <Pong />
+    <div className='min-h-screen'>
+      {/* <Pong />
       <SubmitButton />
       <Loader />
       <Loading />
-      <ProfilePop />
+      <ProfilePop /> */}
+      <RunAwayButton />
       {/* <Waves /> */}
     </div>
   );

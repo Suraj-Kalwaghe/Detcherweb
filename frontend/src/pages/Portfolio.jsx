@@ -1,11 +1,16 @@
 import React from 'react';
-import styles from './styles.module.css';
-import { Container, HeroSectionContainer, Waves } from '../components';
+import {
+  Container,
+  HeroSectionContainer,
+  Waves,
+  RunAwayButton,
+  Cogs,
+} from '../components';
 
 export const Portfolio = () => {
   return (
     <>
-      <section className='max-h-screen'>
+      <section className=''>
         <Container>
           <div className='min-h-screen'>
             <HeroSectionContainer>
@@ -48,7 +53,19 @@ export const Portfolio = () => {
           </div>
           <Waves />
         </Container>
-        <h1>content</h1>
+        <Container>
+          <div className='h-screen bg-transparent'>
+            <div className='h-20 mb-10'>
+              <RunAwayButton text={'Our Services'} />
+            </div>
+            <div className='grid grid-cols-2 gap-5 h-3/5'>
+              <div className='border border-slate-700 rounded-xl overflow-hidden'>
+                <Cogs />
+              </div>
+              <div className='border border-slate-700 rounded-xl'></div>
+            </div>
+          </div>
+        </Container>
       </section>
     </>
   );

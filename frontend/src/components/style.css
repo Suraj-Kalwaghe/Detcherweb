@@ -1,0 +1,47 @@
+.footer {
+  display: flex;
+  height: 271px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  text-align: center;
+}
+.Child {
+  margin-left: 119px;
+  margin-top: 32px;
+  font-size: 21px;
+}
+.customContainer h1 {
+  font-size: 40px;
+  margin: 8px 169px 57px 270px;
+  font-family: cursive;
+}
+.customContainer {
+  display: inline;
+}
+.Bottom {
+  height: 57px;
+  background-color: rgb(232, 229, 247);
+}
+
+.Bottom p {
+  padding: 0px 256px;
+}
+
+#button {
+  border: solid white 2px;
+  padding: 3px 58px;
+  margin: 11px;
+  border-radius: 10px;
+  background-color: rgb(226, 222, 206);
+  width: 0px;
+}
+
+#button:hover {
+  background-color: rgb(103, 223, 129);
+  margin: 10px;
+  width: 100%;
+}
+
+#ip {
+  border: dotted 1px;
+  border-radius: 10px;
+}

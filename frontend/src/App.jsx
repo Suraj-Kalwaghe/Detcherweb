@@ -2,10 +2,21 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Routes, Route, Navigate } from 'react-router-dom';
 
-import { Home, Portfolio, Activities, AboutUs, ReachUs, Apply } from './pages';
-import { Navbar } from './components';
+import { Navbar, FooterPagePro } from './components';
+import { ThemeContext } from './providers/';
+import {
+  Home,
+  Portfolio,
+  Activities,
+  AboutUs,
+  ReachUs,
+  Apply,
+  Animations,
+} from './pages';
 
 export default function App() {
+  const { themeToggle } = React.useContext(ThemeContext);
+
   let initialNavState = false;
 
   if (window.innerWidth > 768) {
@@ -32,12 +43,16 @@ export default function App() {
   }, []);
 
   return (
-    <div className='min-h-screen bg-white text-gray-900 font-redHatDisplay'>
+    <div className='min-h-screen bg-white text-gray-900 dark:bg-slate-900 dark:text-white font-redHatDisplay'>
       <Helmet>
         <title>Detcher Tech Co.</title>
       </Helmet>
       <header className='flex flex-col items-center'>
-        <Navbar toggle={toggle} isOpen={navIsOpen} />
+        <Navbar
+          toggle={toggle}
+          isOpen={navIsOpen}
+          darkModeToggler={themeToggle}
+        />
       </header>
       <Routes>
         <Route path='/index.html/' element={<Navigate replace to='/' />} />
@@ -47,7 +62,9 @@ export default function App() {
         <Route path='/about-us' element={<AboutUs />} />
         <Route path='/reach-us' element={<ReachUs />} />
         <Route path='/apply' element={<Apply />} />
+        <Route path='/animations' element={<Animations />} />
       </Routes>
+      <footer>{/* <FooterPagePro /> */}</footer>
     </div>
   );
 }

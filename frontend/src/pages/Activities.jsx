@@ -5,7 +5,7 @@ import { Container } from '../components';
 export const Activities = () => {
   return (
     <Container>
-      <div className='flex flex-wrap'>
+      {/* <div className='flex flex-wrap'>
         <div className='border border-slate-300 rounded-lg flex xl:w-1/4 md:w-1/2 w-full h-1/3'>
           <img
             src='https://static.miniclipcdn.com/content/game-icons/small/shortride_70x59.jpg'
@@ -23,6 +23,10 @@ export const Activities = () => {
             </p>
           </div>
         </div>
+      </div> */}
+      <div className='Activitycontainer'>
+        <div className='spinwheel' onClick={<Spinwheel />}></div>
+        <div className='Miniclip'></div>
       </div>
     </Container>
   );

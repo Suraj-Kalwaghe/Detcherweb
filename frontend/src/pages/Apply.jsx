@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container } from '../components';
+import { Container, ParticlesJS } from '../components';
 import internshipPoster from '../static/internship_poster.png';
 
 export const Apply = () => {
@@ -22,6 +22,7 @@ export const Apply = () => {
           </span>
         </button>
       </a>
+      <ParticlesJS />
     </Container>
   );
 };

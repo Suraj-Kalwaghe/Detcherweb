@@ -4,3 +4,4 @@ export * from './Activities';
 export * from './ReachUs';
 export * from './AboutUs';
 export * from './Apply';
+export * from './Animations';

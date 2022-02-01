@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 import detcherLogo from '../static/detcherLogo.png';
 
-export const Navbar = ({ isOpen, toggle }) => {
+export const Navbar = ({ isOpen, toggle, darkModeToggler }) => {
   const navItems = [
     {
       name: 'Home',
@@ -30,7 +30,7 @@ export const Navbar = ({ isOpen, toggle }) => {
   return (
     <nav
       className={
-        'container lg:flex lg:justify-between items-center lg:h-20 h-16 lg:px-5 px-2.5 lg:py-4 py-2 font-medium text-lg z-50'
+        'container max-h-screen lg:flex lg:justify-between items-center lg:h-20 h-16 lg:px-5 px-2.5 lg:py-4 py-2 font-medium text-lg z-50'
       }>
       <div className='flex justify-between'>
         <a href='/'>
@@ -42,7 +42,7 @@ export const Navbar = ({ isOpen, toggle }) => {
         </a>
         <button
           onClick={toggle}
-          className='lg:hidden rounded-lg focus:outline-none focus:shadow-outline'>
+          className='lg:hidden rounded-lg focus:outline-none focus:shadow-outline dark:text-white'>
           <svg fill='currentColor' viewBox='0 0 20 20' className='w-6 h-6'>
             <path
               fill-rule='evenodd'
@@ -60,7 +60,7 @@ export const Navbar = ({ isOpen, toggle }) => {
       <div
         className={
           isOpen
-            ? 'flex lg:flex-row flex-col lg:justify-between justify-evenly flex-1 lg:bg-transparent bg-white'
+            ? 'flex lg:flex-row flex-col lg:justify-between justify-evenly flex-1 lg:bg-transparent dark:bg-slate-900 bg-white'
             : 'hidden'
         }>
         <div className='flex lg:flex-row flex-col space-x-8 lg:items-center'>
@@ -91,20 +91,24 @@ export const Navbar = ({ isOpen, toggle }) => {
               : 'hidden'
           }>
           <div>
-            <svg
-              width='30'
-              height='30'
-              viewBox='0 0 30 30'
-              fill='none'
-              xmlns='http://www.w3.org/2000/svg'>
-              <path
-                d='M15 3.75V5M15 25V26.25M26.25 15H25M5 15H3.75M22.955 22.955L22.0711 22.0711M7.92893 7.92893L7.04505 7.04505M22.955 7.04512L22.0711 7.929M7.929 22.0711L7.04511 22.955M20 15C20 17.7614 17.7614 20 15 20C12.2386 20 10 17.7614 10 15C10 12.2386 12.2386 10 15 10C17.7614 10 20 12.2386 20 15Z'
-                stroke='#111827'
-                stroke-width='2'
-                stroke-linecap='round'
-                stroke-linejoin='round'
-              />
-            </svg>
+            <button
+              onClick={darkModeToggler}
+              className='text-slate-900 dark:text-white'>
+              <svg
+                width='30'
+                height='30'
+                viewBox='0 0 30 30'
+                fill='currentColor'
+                xmlns='http://www.w3.org/2000/svg'>
+                <path
+                  d='M15 3.75V5M15 25V26.25M26.25 15H25M5 15H3.75M22.955 22.955L22.0711 22.0711M7.92893 7.92893L7.04505 7.04505M22.955 7.04512L22.0711 7.929M7.929 22.0711L7.04511 22.955M20 15C20 17.7614 17.7614 20 15 20C12.2386 20 10 17.7614 10 15C10 12.2386 12.2386 10 15 10C17.7614 10 20 12.2386 20 15Z'
+                  stroke='currentColor'
+                  stroke-width='2'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                />
+              </svg>
+            </button>
           </div>
           <NavLink
             className={({ isActive }) =>

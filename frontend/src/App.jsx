@@ -58,7 +58,7 @@ export default function App() {
         <Route path='/index.html/' element={<Navigate replace to='/' />} />
         <Route exact path='/' element={<Home />} />
         <Route path='/portfolio' element={<Portfolio />} />
-        <Route path='/activities' element={<Activities />} />
+        <Route path='/activities/*' element={<Activities />} />
         <Route path='/about-us' element={<AboutUs />} />
         <Route path='/reach-us' element={<ReachUs />} />
         <Route path='/apply' element={<Apply />} />

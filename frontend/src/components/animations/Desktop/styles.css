@@ -1,0 +1,34 @@
+/* body {
+  text-align: center;
+}
+
+svg {
+  height: 90vh;
+} */
+
+#webdev-animation * {
+  transform-box: fill-box;
+}
+#webdev-animation #in-browser {
+  opacity: 0;
+  transform-origin: center bottom;
+}
+#webdev-animation #in-browser #hero,
+#webdev-animation #in-browser #Logo,
+#webdev-animation #in-browser #menu,
+#webdev-animation #in-browser #h1 {
+  opacity: 0;
+  transform-origin: left top;
+}
+#webdev-animation #in-browser #body_text * {
+  opacity: 0;
+  transform-origin: left top;
+}
+#webdev-animation #in-browser #image {
+  opacity: 0;
+  transform-origin: center center;
+}
+#webdev-animation #Code * {
+  transform-origin: left center;
+  /* or transform-origin: 50% */
+}

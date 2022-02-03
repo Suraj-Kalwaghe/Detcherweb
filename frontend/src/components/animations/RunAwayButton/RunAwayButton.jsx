@@ -6,7 +6,6 @@ import './styles.css';
 export const RunAwayButton = ({ text }) => {
   React.useEffect(() => {
     const button = document.getElementById('runaway-btn');
-    // setMainButton(button);
     const animateMove = (element, prop, pixels) => {
       anime({
         targets: element,
@@ -33,7 +32,7 @@ export const RunAwayButton = ({ text }) => {
   return (
     <>
       <button id='runaway-btn' className='runAwayButton'>
-        <span className='text-xl font-bold text-slate-500 border border-slate-300 w-1/5 rounded-2xl px-20 py-7 shadow-md'>
+        <span className='text-xl font-bold text-slate-500 border border-slate-300 w-1/5 rounded-2xl px-9 py-3 shadow-md'>
           {text}
         </span>
       </button>

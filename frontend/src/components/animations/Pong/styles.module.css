@@ -1,12 +1,13 @@
 .customContainer1 {
   width: 500px;
   display: inline-block;
-  transform: translateY(200px);
+  transform: translateY(40%);
+  height: inherit;
 }
 .bar {
   background: #ffffff;
-  width: 10px;
-  height: 100px;
+  width: 20px;
+  height: 110px;
 }
 .bar1 {
   float: left;
@@ -16,8 +17,8 @@
 }
 .ball {
   background: #ffffff;
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   position: relative;
   top: 45px;
   left: 10px;

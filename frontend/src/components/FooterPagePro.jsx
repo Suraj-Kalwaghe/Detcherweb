@@ -3,9 +3,9 @@ import './style.css';
 
 export const FooterPagePro = () => {
   return (
-    <div className='customContainer'>
-      <div className='footer'>
-        <h1>
+    <div className='w-screen flex flex-col items-center justify-center'>
+      <div className='footer w-full flex items-center justify-evenly'>
+        <h1 className='text-3xl '>
           <b>Detcher.com</b>
         </h1>
         <div className='Child'>
@@ -58,7 +58,7 @@ export const FooterPagePro = () => {
           </ul>
         </div>
       </div>
-      <div className='Bottom'>
+      <div className='Bottom w-full'>
         <p>
           <b>&copy;2022 Detcher</b>
         </p>

@@ -6,3 +6,5 @@ export * from './ParticlesJS';
 export * from './Waves';
 export * from './RunAwayButton';
 export * from './Cogs';
+export * from './Desktop';
+export * from './CarGame';

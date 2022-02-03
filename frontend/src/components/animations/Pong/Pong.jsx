@@ -97,12 +97,10 @@ export const Pong = () => {
   });
 
   return (
-    <div>
-      <div class={styles.customContainer1}>
-        <div class={`${styles.bar} ${styles.bar1}`}></div>
-        <div class={styles.ball}></div>
-        <div class={`${styles.bar} ${styles.bar2}`}></div>
-      </div>
+    <div class={styles.customContainer1}>
+      <div class={`${styles.bar} ${styles.bar1}`}></div>
+      <div class={styles.ball}></div>
+      <div class={`${styles.bar} ${styles.bar2}`}></div>
     </div>
   );
 };

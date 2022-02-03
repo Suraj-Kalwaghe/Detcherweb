@@ -1,16 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.15a06cf3.css",
-    "main.js": "/static/js/main.a11dca4a.js",
+    "main.css": "/static/css/main.807250c2.css",
+    "main.js": "/static/js/main.9777d49f.js",
     "static/media/internship_poster.png": "/static/media/internship_poster.46b69aec80278fbb1d99.png",
+    "static/media/bg_2.jpg": "/static/media/bg_2.a04ac9c299d677fcae41.jpg",
+    "static/media/bg_1.jpg": "/static/media/bg_1.c2dcdc7a6b00d2e83598.jpg",
     "static/media/yash.jpeg": "/static/media/yash.7ccc504974be7cb8ac60.jpeg",
     "static/media/subhanshu.jpeg": "/static/media/subhanshu.902196bfe0baa8935712.jpeg",
+    "static/media/bg_3.jpg": "/static/media/bg_3.363e3aba2864eaf0f5ed.jpg",
     "static/media/detcherLogo.png": "/static/media/detcherLogo.a0130b808399ed109557.png",
     "static/media/suraj.jpeg": "/static/media/suraj.c77a834f7ea7c7cb38b1.jpeg",
     "index.html": "/index.html",
-    "static/media/Wave.svg": "/static/media/Wave.ddd0e8bcb8f9fd8f3f28.svg",
-    "main.15a06cf3.css.map": "/static/css/main.15a06cf3.css.map",
-    "main.a11dca4a.js.map": "/static/js/main.a11dca4a.js.map"
+    "static/media/Wave.svg": "/static/media/Wave.65f959705981c8989109.svg",
+    "main.807250c2.css.map": "/static/css/main.807250c2.css.map",
+    "main.9777d49f.js.map": "/static/js/main.9777d49f.js.map"
   },
-  "entrypoints": ["static/css/main.15a06cf3.css", "static/js/main.a11dca4a.js"]
+  "entrypoints": [
+    "static/css/main.807250c2.css",
+    "static/js/main.9777d49f.js"
+  ]
 }

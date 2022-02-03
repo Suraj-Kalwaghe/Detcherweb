@@ -64,7 +64,9 @@ export default function App() {
         <Route path='/apply' element={<Apply />} />
         <Route path='/animations' element={<Animations />} />
       </Routes>
-      <footer>{/* <FooterPagePro /> */}</footer>
+      <footer>
+        <FooterPagePro />
+      </footer>
     </div>
   );
 }

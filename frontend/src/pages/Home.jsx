@@ -95,7 +95,7 @@ export const Home = () => {
         <section class='text-gray-400 text-base'>
           <div class='container lg:px-5 px-2.5 lg:py-24 py-12 mx-auto'>
             <div class='flex flex-wrap -m-4 md:justify-center'>
-              {profileCardData.map(profile => (
+              {/* {profileCardData.map(profile => (
                 <div class='lg:w-1/3 lg:mb-0 mb-6 p-4'>
                   <div class='h-full text-center'>
                     {profile.profilePic}
@@ -107,7 +107,7 @@ export const Home = () => {
                     <p class='text-gray-500'>{profile.title}</p>
                   </div>
                 </div>
-              ))}
+              ))} */}
             </div>
           </div>
         </section>

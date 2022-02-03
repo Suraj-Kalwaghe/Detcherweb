@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from './styles.module.css';
-import { Container, HeroSectionContainer } from '../components';
+// import styles from './styles.module.css';
+import { Container, HeroSectionContainer, ProfilePop } from '../components';
 
 export const AboutUs = () => {
   return (
-    <section className='max-h-screen'>
+    <section className='min-h-screen'>
       <Container>
         <HeroSectionContainer>
           <div className='xl:w-8/12 lg:w-full md:w-4/5 w-full lg:mb-20 md:mb-14 md:mt-32 mt-20 mb-10 relative'>
@@ -1214,7 +1214,10 @@ export const AboutUs = () => {
           </button>
         </HeroSectionContainer>
       </Container>
-      <svg
+      <div className='flex justify-evenly my-20'>
+        <ProfilePop />
+      </div>
+      {/* <svg
         id={styles.mysvg}
         className='w-full'
         // width='1920'
@@ -1238,7 +1241,7 @@ export const AboutUs = () => {
             <stop offset='1' stop-color='white' stop-opacity='0.3' />
           </linearGradient>
         </defs>
-      </svg>
+      </svg> */}
     </section>
   );
 };

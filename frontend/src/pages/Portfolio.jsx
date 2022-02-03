@@ -5,6 +5,7 @@ import {
   Waves,
   RunAwayButton,
   Cogs,
+  Desktop,
 } from '../components';
 
 export const Portfolio = () => {
@@ -58,11 +59,23 @@ export const Portfolio = () => {
             <div className='h-20 mb-10'>
               <RunAwayButton text={'Our Services'} />
             </div>
-            <div className='grid grid-cols-2 gap-5 h-3/5'>
-              <div className='border border-slate-700 rounded-xl overflow-hidden'>
-                <Cogs />
+            <div className='grid lg:grid-rows-none lg:grid-cols-2 gap-5 h-full'>
+              <div className='flex flex-col h-4/6'>
+                <div className='rounded-3xl overflow-hidden h-full bg-gray-100 hover:shadow-lg transition-shadow hover:transition-transform cursor-pointer duration-150 ease-in hover:-translate-y-2 hover:translate-x-2'>
+                  <Cogs title='Robotics, IoT and Electronics' />
+                </div>
+                <h1 className='text-3xl font-bold text-slate-500 mt-5 w-full row-span-1 text-center'>
+                  Robotics, IoT and Electronics
+                </h1>
               </div>
-              <div className='border border-slate-700 rounded-xl'></div>
+              <div className='flex flex-col h-4/6'>
+                <div className='rounded-3xl overflow-hidden h-full bg-gray-100 flex justify-center items-center hover:shadow-lg transition-all cursor-pointer duration-150 ease-in hover:-translate-y-2 hover:translate-x-2'>
+                  <Desktop />
+                </div>
+                <h1 className='text-3xl font-bold text-slate-500 mt-5 w-full row-span-1 text-center'>
+                  Web Dev
+                </h1>
+              </div>
             </div>
           </div>
         </Container>

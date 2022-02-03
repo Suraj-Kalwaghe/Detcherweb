@@ -1,7 +1,8 @@
 import React from 'react';
 
 import './styles.css';
-import { Container } from '../../components';
+import { Container, Pong, CarGame } from '../../components';
+import { Link, Navigate } from 'react-router-dom';
 
 export const Main = () => {
   return (
@@ -25,9 +26,25 @@ export const Main = () => {
           </div>
         </div>
       </div> */}
-      <div className='Activitycontainer'>
-        <div className='spinwheel'></div>
-        <div className='Miniclip'></div>
+      <div className='grid lg:grid-rows-none lg:grid-cols-2 gap-5 min-h-screen mt-[5%]'>
+        <div className='flex flex-col h-4/6'>
+          <div className='rounded-3xl overflow-hidden h-full flex items-center justify-center bg-gray-100 hover:shadow-lg transition-shadow hover:transition-transform cursor-pointer duration-150 ease-in hover:-translate-y-2 hover:translate-x-2'>
+            <Pong />
+          </div>
+          <h1 className='text-3xl font-bold text-slate-500 mt-5 w-full row-span-1 text-center'>
+            Our Games
+          </h1>
+        </div>
+        <div className='flex flex-col h-4/6'>
+          <div className='rounded-3xl overflow-hidden h-full bg-gray-100 flex justify-center items-center hover:shadow-lg transition-all cursor-pointer duration-150 ease-in hover:-translate-y-2 hover:translate-x-2'>
+            <Link to={'/activities/game-center'}>
+              <CarGame />
+            </Link>
+          </div>
+          <h1 className='text-3xl font-bold text-slate-500 mt-5 w-full row-span-1 text-center'>
+            Games Center
+          </h1>
+        </div>
       </div>
     </Container>
   );

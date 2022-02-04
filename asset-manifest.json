@@ -1,22 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.807250c2.css",
-    "main.js": "/static/js/main.9777d49f.js",
+    "main.css": "/static/css/main.9e905528.css",
+    "main.js": "/static/js/main.b5ef3a1d.js",
     "static/media/internship_poster.png": "/static/media/internship_poster.46b69aec80278fbb1d99.png",
+    "static/media/footerVideo.mp4": "/static/media/footerVideo.6dfbb4368f10bfe65da4.mp4",
+    "static/media/yash-t.png": "/static/media/yash-t.c7b0b7d810724ca5a815.png",
+    "static/media/subhanshu-t.png": "/static/media/subhanshu-t.6d9bc60e7f58c66d8c57.png",
+    "static/media/suraj-t.png": "/static/media/suraj-t.079cfd5421d9fb07caec.png",
     "static/media/bg_2.jpg": "/static/media/bg_2.a04ac9c299d677fcae41.jpg",
+    "static/media/RPie.jpg": "/static/media/RPie.4451bdcae4f95429f8a9.jpg",
+    "static/media/IoT.jpg": "/static/media/IoT.b4571d1b398f1c8245bb.jpg",
     "static/media/bg_1.jpg": "/static/media/bg_1.c2dcdc7a6b00d2e83598.jpg",
-    "static/media/yash.jpeg": "/static/media/yash.7ccc504974be7cb8ac60.jpeg",
-    "static/media/subhanshu.jpeg": "/static/media/subhanshu.902196bfe0baa8935712.jpeg",
+    "static/media/Arduino.jpg": "/static/media/Arduino.672def8280147ea73d57.jpg",
     "static/media/bg_3.jpg": "/static/media/bg_3.363e3aba2864eaf0f5ed.jpg",
     "static/media/detcherLogo.png": "/static/media/detcherLogo.a0130b808399ed109557.png",
-    "static/media/suraj.jpeg": "/static/media/suraj.c77a834f7ea7c7cb38b1.jpeg",
     "index.html": "/index.html",
     "static/media/Wave.svg": "/static/media/Wave.65f959705981c8989109.svg",
-    "main.807250c2.css.map": "/static/css/main.807250c2.css.map",
-    "main.9777d49f.js.map": "/static/js/main.9777d49f.js.map"
+    "main.9e905528.css.map": "/static/css/main.9e905528.css.map",
+    "main.b5ef3a1d.js.map": "/static/js/main.b5ef3a1d.js.map"
   },
   "entrypoints": [
-    "static/css/main.807250c2.css",
-    "static/js/main.9777d49f.js"
+    "static/css/main.9e905528.css",
+    "static/js/main.b5ef3a1d.js"
   ]
 }

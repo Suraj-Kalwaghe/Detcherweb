@@ -4,6 +4,9 @@ import { NavLink } from 'react-router-dom';
 import detcherLogo from '../static/detcherLogo.png';
 
 export const Navbar = ({ isOpen, toggle, darkModeToggler }) => {
+  const [isMobile, setIsMobile] = React.useState(
+    window.innerWidth < 1024 ? true : false
+  );
   const navItems = [
     {
       name: 'Home',
@@ -26,6 +29,11 @@ export const Navbar = ({ isOpen, toggle, darkModeToggler }) => {
       link: '/reach-us',
     },
   ];
+
+  React.useEffect(() => {
+    if (window.innerWidth < 1024) setIsMobile(true);
+    else setIsMobile(false);
+  }, [isMobile]);
 
   return (
     <nav
@@ -72,7 +80,7 @@ export const Navbar = ({ isOpen, toggle, darkModeToggler }) => {
             }>
             {navItems.map(navLink => (
               <NavLink
-                onClick={window.innerWidth < 1024 ? toggle : undefined}
+                onClick={isMobile ? toggle : null}
                 to={navLink.link}
                 className={({ isActive }) =>
                   isActive
@@ -111,6 +119,7 @@ export const Navbar = ({ isOpen, toggle, darkModeToggler }) => {
             </button>
           </div>
           <NavLink
+            onClick={isMobile ? toggle : null}
             className={({ isActive }) =>
               isActive
                 ? 'shadow-lg shadow-blue-300 bg-blue-700 text-white lg:px-9 px-4 lg:py-2 py-1 rounded-full hover:shadow-blue-300 transition-shadow duration-150 ease-in-out'

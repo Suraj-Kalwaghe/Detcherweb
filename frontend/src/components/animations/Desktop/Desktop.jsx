@@ -69,7 +69,7 @@ export const Desktop = () => {
   });
 
   return (
-    <div className='relative h-1/2'>
+    <div className='relative xl:h-1/2 h-3/4'>
       <svg
         id='webdev-animation'
         className='h-full flex'

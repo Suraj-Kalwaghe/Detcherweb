@@ -602,8 +602,8 @@ export const CarGame = () => {
   });
   return (
     <>
-      <div className='gsbody'>
-        <canvas className='gscanvas' height={450} width={750}></canvas>
+      <div className='gsbody h-full'>
+        <canvas height={600} width={750} className='w-full'></canvas>
       </div>
     </>
   );

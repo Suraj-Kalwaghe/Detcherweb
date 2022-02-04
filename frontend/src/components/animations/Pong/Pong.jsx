@@ -97,7 +97,8 @@ export const Pong = () => {
   });
 
   return (
-    <div class={styles.customContainer1}>
+    <div
+      class={`${styles.customContainer1} lg:translate-y-[40%] translate-y-[30%] lg:w-[500px] w-full`}>
       <div class={`${styles.bar} ${styles.bar1}`}></div>
       <div class={styles.ball}></div>
       <div class={`${styles.bar} ${styles.bar2}`}></div>

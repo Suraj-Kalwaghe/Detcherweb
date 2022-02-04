@@ -3,7 +3,7 @@ import './styles.css';
 
 export const Cogs = ({ title }) => {
   return (
-    <div className='gearbox opacity-70'>
+    <div className='gearbox opacity-70 xl:left-[30%] md:left-[30%] lg:top-[30%] left-[20%] top-[20%]'>
       <div className='gear one'>
         <div className='gear-inner'>
           <div className='bar'></div>

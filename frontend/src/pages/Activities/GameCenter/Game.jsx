@@ -27,7 +27,7 @@ export const Game = () => {
       case 'monkey-kick':
         return (
           <div
-            class='miniclip-game-embed shadow-xl'
+            class='miniclip-game-embed'
             data-game-name='monkey-kick'
             data-theme='5'
             data-width='600'
@@ -92,8 +92,8 @@ export const Game = () => {
   return (
     <>
       <Container>
-        <div className='w-full flex flex-col justify-center items-center mt-[2%]'>
-          {handleActiveGame(params.gameName)}
+        <div className=' flex flex-col justify-center items-center mt-[2%] mb-14'>
+          <div className='shadow-lg'>{handleActiveGame(params.gameName)}</div>
           <button
             onClick={handleStart}
             className='bg-blue-600 text-white lg:px-9 px-4 lg:py-2 py-1 rounded-full w-[600px] my-5 hover:shadow-lg hover:shadow-blue-300 transition-shadow duration-150 ease-in-out z-50'>

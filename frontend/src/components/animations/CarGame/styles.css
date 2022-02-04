@@ -1,12 +1,8 @@
 .gsbody {
-  background-color: #f8f3a9;
+  /* background-color: #f8f3a9; */
   margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-}
-
-.gscanvas {
-  border-radius: 0.4em;
+  /* min-height: 100vh; */
 }

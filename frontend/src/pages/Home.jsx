@@ -1,61 +1,24 @@
 import React from 'react';
 import styles from './styles.module.css';
 
-import suraj from '../static/suraj.jpeg';
-import yash from '../static/yash.jpeg';
-import subhanshu from '../static/subhanshu.jpeg';
+import Arduino from '../static/Arduino.jpg';
+import RPie from '../static/RPie.jpg';
+import IoT from '../static/IoT.jpg';
+
 import { Container, HeroSectionContainer } from '../components';
 
 export const Home = () => {
-  const profileCardData = [
-    {
-      name: 'Suraj Kalwaghe',
-      quote: 'Figuring out ways to provide value to the society.',
-      profilePic: (
-        <img
-          src={suraj}
-          alt='profilePic'
-          class='lg:w-20 w-14 lg:h-20 h-14 lg:mb-8 mb-4 object-cover object-center rounded-full inline-block border-2 bg-opacity-10'
-          id='Sooraj'
-        />
-      ),
-      title: 'Founder',
-    },
-    {
-      name: 'Subhanshu Bansal',
-      quote: "Web Development isn't difficult. You just need to stay curious",
-      profilePic: (
-        <img
-          src={subhanshu}
-          alt='profilePic'
-          class='lg:w-20 w-14 lg:h-20 h-14 lg:mb-8 mb-4 object-cover object-center rounded-full inline-block border-2 bg-opacity-1'
-          id='Subhanshu'
-        />
-      ),
-      title: 'WebDev Head',
-    },
-    {
-      name: 'Yash Markad',
-      quote:
-        'Electronics, Micro-controller, Artificial Intelligence, GAN, Automation, Robotics, Block-Chain',
-      profilePic: (
-        <img
-          src={yash}
-          alt='profilePic'
-          class='lg:w-20 w-14 lg:h-20 h-14 lg:mb-8 mb-4 object-cover object-center rounded-full inline-block border-2 bg-opacity-1'
-          id='yash'
-        />
-      ),
-      title: 'Co-Founder, CTO',
-    },
+  const cards = [
+    { title: 'Arduino', img: Arduino },
+    { title: 'Raspberry Pi', img: RPie },
+    { title: 'IoT', img: IoT },
   ];
-
   return (
     <Container>
       <HeroSectionContainer>
         <div className='xl:w-8/12 lg:w-full md:w-4/5 w-full lg:mb-20 md:mb-14 md:mt-32 mt-20 mb-10 relative'>
           <div className='z-40 relative'>
-            <h1 className='lg:text-7xl md:text-5xl text-4xl font-black text-center bg-clip-text text-transparent bg-gradient-to-br from-slate-900 to-cyan-900 pb-2.5 lg:mb-7 md:mb-5 mb-2'>
+            <h1 className='lg:text-7xl md:text-5xl text-4xl font-black text-center bg-clip-text text-transparent bg-gradient-to-br from-slate-900 to-cyan-900 dark:from-white dark:to-cyan-300  pb-2.5 lg:mb-7 md:mb-5 mb-2'>
               Offering world class services to our clients
             </h1>
             <h4 className='text-slate-600 font-medium lg:text-2xl text-xl text-center'>
@@ -95,47 +58,26 @@ export const Home = () => {
         <section class='text-gray-400 text-base'>
           <div class='container lg:px-5 px-2.5 lg:py-24 py-12 mx-auto'>
             <div class='flex flex-wrap -m-4 md:justify-center'>
-              {/* {profileCardData.map(profile => (
-                <div class='lg:w-1/3 lg:mb-0 mb-6 p-4'>
-                  <div class='h-full text-center'>
-                    {profile.profilePic}
-                    <p class='leading-relaxed'>{profile.quote}</p>
+              {cards.map(card => (
+                <div class='lg:w-1/3 w-full lg:mb-0 mb-6 p-4'>
+                  <div class='h-full text-center flex flex-col items-center'>
+                    <img
+                      src={card.img}
+                      height='200'
+                      width='400'
+                      className='rounded-xl object-cover h-[200px] w-[400px] hover:-translate-y-3 hover:translate-x-2 transition-transform duration-150 ease-linear hover:shadow-lg'
+                      alt={card.title}
+                    />
                     <span class='inline-block h-1 w-10 rounded bg-indigo-500 lg:mt-6 mt-3 lg:mb-4 mb-2'></span>
-                    <h2 class='font-medium title-font tracking-wider text-sm'>
-                      {profile.name}
+                    <h2 class='font-bold text-slate-700 tracking-wider text-base'>
+                      {card.title}
                     </h2>
-                    <p class='text-gray-500'>{profile.title}</p>
                   </div>
                 </div>
-              ))} */}
+              ))}
             </div>
           </div>
         </section>
-        <button className='lg:mt-20 md:mt-16 mt-12 animate-bounce'>
-          <svg
-            className='h-10'
-            // width='40'
-            // height='40'
-            viewBox='0 0 40 40'
-            fill='none'
-            xmlns='http://www.w3.org/2000/svg'>
-            <path
-              fill-rule='evenodd'
-              clip-rule='evenodd'
-              d='M28.0485 20.3515C28.5172 20.8201 28.5172 21.5799 28.0485 22.0485L20.8485 29.2485C20.3799 29.7172 19.6201 29.7172 19.1515 29.2485L11.9515 22.0485C11.4828 21.5799 11.4828 20.8201 11.9515 20.3515C12.4201 19.8828 13.1799 19.8828 13.6485 20.3515L18.8 25.5029L18.8 11.6C18.8 10.9373 19.3373 10.4 20 10.4C20.6627 10.4 21.2 10.9373 21.2 11.6L21.2 25.5029L26.3515 20.3515C26.8201 19.8828 27.5799 19.8828 28.0485 20.3515Z'
-              fill='#2563EB'
-            />
-            <rect
-              x='1'
-              y='1'
-              width='38'
-              height='38'
-              rx='19'
-              stroke='#93C5FD'
-              stroke-width='2'
-            />
-          </svg>
-        </button>
       </HeroSectionContainer>
     </Container>
   );

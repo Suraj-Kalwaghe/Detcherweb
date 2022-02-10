@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.9e905528.css",
-    "main.js": "/static/js/main.b5ef3a1d.js",
+    "main.css": "/static/css/main.4b50770e.css",
+    "main.js": "/static/js/main.64038639.js",
+    "static/media/footerVideo.gif": "/static/media/footerVideo.988e43d28c1df7a9428e.gif",
     "static/media/internship_poster.png": "/static/media/internship_poster.46b69aec80278fbb1d99.png",
-    "static/media/footerVideo.mp4": "/static/media/footerVideo.6dfbb4368f10bfe65da4.mp4",
     "static/media/yash-t.png": "/static/media/yash-t.c7b0b7d810724ca5a815.png",
     "static/media/subhanshu-t.png": "/static/media/subhanshu-t.6d9bc60e7f58c66d8c57.png",
     "static/media/suraj-t.png": "/static/media/suraj-t.079cfd5421d9fb07caec.png",
@@ -16,11 +16,11 @@
     "static/media/detcherLogo.png": "/static/media/detcherLogo.a0130b808399ed109557.png",
     "index.html": "/index.html",
     "static/media/Wave.svg": "/static/media/Wave.65f959705981c8989109.svg",
-    "main.9e905528.css.map": "/static/css/main.9e905528.css.map",
-    "main.b5ef3a1d.js.map": "/static/js/main.b5ef3a1d.js.map"
+    "main.4b50770e.css.map": "/static/css/main.4b50770e.css.map",
+    "main.64038639.js.map": "/static/js/main.64038639.js.map"
   },
   "entrypoints": [
-    "static/css/main.9e905528.css",
-    "static/js/main.b5ef3a1d.js"
+    "static/css/main.4b50770e.css",
+    "static/js/main.64038639.js"
   ]
 }

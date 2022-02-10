@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import footerVideo from '../static/footerVideo.mp4';
+import footerGif from '../static/footerVideo.gif';
 import { Container } from '.';
 import './style.css';
 
@@ -16,14 +16,11 @@ export const FooterPagePro = () => {
               style={{ fontFamily: 'cursive' }}>
               Detcher.com
             </h1> */}
-            <video
-              src={footerVideo}
+            <img
+              src={footerGif}
               className='lg:w-3/5 w-1/4 shadow-lg rounded-xl m-auto lg:ml-auto ml-0 col-span-2'
-              // width='600'
-              // height='300'
-              autoplay={true}
-              loop={true}
-              muted={true}
+              height={100}
+              width={200}
             />
             <div className='grid lg:grid-cols-4 grid-cols-2 gap-x-4 gap-y-5 flex-1 col-span-4'>
               <div className='flex flex-col gap-5'>

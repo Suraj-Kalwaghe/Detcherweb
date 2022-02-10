@@ -11,11 +11,6 @@ export const FooterPagePro = () => {
       <div className='border-t px-4 py-5 mt-10'>
         <Container>
           <div className='footer w-full lg:grid grid-cols-6 gap-x-10'>
-            {/* <h1
-              className='text-3xl font-bold mb-10 col-span-2'
-              style={{ fontFamily: 'cursive' }}>
-              Detcher.com
-            </h1> */}
             <img
               src={footerGif}
               className='lg:w-3/5 w-1/4 shadow-lg rounded-xl m-auto lg:ml-auto ml-0 col-span-2'
@@ -86,13 +81,6 @@ export const FooterPagePro = () => {
           </div>
         </Container>
       </div>
-      {/* <div className='Bottom text-sm bg-purple-100 dark:opac text-purple-600 w-full flex justify-center items-center'>
-        <Container>
-          <p>
-            <b>&copy;2022 Detcher Tech Co.</b>
-          </p>
-        </Container>
-      </div> */}
     </div>
   );
 };

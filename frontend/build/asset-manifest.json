@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4b50770e.css",
-    "main.js": "/static/js/main.64038639.js",
+    "main.css": "/static/css/main.19e72036.css",
+    "main.js": "/static/js/main.ba1787c7.js",
     "static/media/footerVideo.gif": "/static/media/footerVideo.988e43d28c1df7a9428e.gif",
     "static/media/internship_poster.png": "/static/media/internship_poster.46b69aec80278fbb1d99.png",
     "static/media/yash-t.png": "/static/media/yash-t.c7b0b7d810724ca5a815.png",
@@ -13,14 +13,13 @@
     "static/media/bg_1.jpg": "/static/media/bg_1.c2dcdc7a6b00d2e83598.jpg",
     "static/media/Arduino.jpg": "/static/media/Arduino.672def8280147ea73d57.jpg",
     "static/media/bg_3.jpg": "/static/media/bg_3.363e3aba2864eaf0f5ed.jpg",
-    "static/media/detcherLogo.png": "/static/media/detcherLogo.a0130b808399ed109557.png",
     "index.html": "/index.html",
     "static/media/Wave.svg": "/static/media/Wave.65f959705981c8989109.svg",
-    "main.4b50770e.css.map": "/static/css/main.4b50770e.css.map",
-    "main.64038639.js.map": "/static/js/main.64038639.js.map"
+    "main.19e72036.css.map": "/static/css/main.19e72036.css.map",
+    "main.ba1787c7.js.map": "/static/js/main.ba1787c7.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b50770e.css",
-    "static/js/main.64038639.js"
+    "static/css/main.19e72036.css",
+    "static/js/main.ba1787c7.js"
   ]
 }

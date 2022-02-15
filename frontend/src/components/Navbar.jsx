@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import detcherLogo from '../static/detcherLogo.png';
+// import detcherLogo from '../static/detcherLogo.png';
 
 export const Navbar = ({ isOpen, toggle, darkModeToggler }) => {
   const [isMobile, setIsMobile] = React.useState(
@@ -38,15 +38,14 @@ export const Navbar = ({ isOpen, toggle, darkModeToggler }) => {
   return (
     <nav
       className={
-        'container max-h-screen lg:flex lg:justify-between items-center lg:h-20 h-16 lg:px-5 px-2.5 lg:py-4 py-2 font-medium text-lg z-50'
+        'container max-h-screen lg:flex lg:justify-between lg:bg-transparent dark:lg:bg-transparent bg-white dark:bg-slate-900 items-center lg:h-20 h-16 lg:px-5 px-2.5 lg:py-4 py-2 font-medium text-lg z-50'
       }>
       <div className='flex justify-between'>
-        <a href='/'>
-          <img
-            src={detcherLogo}
-            alt='companyLogo'
-            className='h-10 mb-3 lg:mr-10'
-          />
+        <a
+          href='/'
+          className='font-bebasNeue text-slate-900 dark:text-slate-100 lg:mr-10'>
+          {/* <img src={detcherLogo} alt='companyLogo' className='h-10 lg:mr-10' /> */}
+          <span className='lg:text-3xl text-xl'>DTC</span>
         </a>
         <button
           onClick={toggle}
@@ -68,7 +67,7 @@ export const Navbar = ({ isOpen, toggle, darkModeToggler }) => {
       <div
         className={
           isOpen
-            ? 'flex lg:flex-row flex-col lg:justify-between justify-evenly flex-1 lg:bg-transparent dark:bg-slate-900 bg-white'
+            ? 'flex lg:flex-row flex-col lg:justify-between justify-evenly flex-1 bg-inherit'
             : 'hidden'
         }>
         <div className='flex lg:flex-row flex-col space-x-8 lg:items-center'>
@@ -84,8 +83,8 @@ export const Navbar = ({ isOpen, toggle, darkModeToggler }) => {
                 to={navLink.link}
                 className={({ isActive }) =>
                   isActive
-                    ? 'border-b-2 border-indigo-500 text-slate-900 lg:mb-0 mb-2 flex items-center'
-                    : 'text-slate-500 flex lg:mb-0.5 mb-2 items-center'
+                    ? 'border-b-2 border-indigo-500 text-slate-900 dark:text-white lg:mb-0 mb-2 flex items-center'
+                    : 'text-slate-500 dark:text-slate-400 flex lg:mb-0.5 mb-2 items-center'
                 }>
                 {navLink.name}
               </NavLink>
@@ -122,8 +121,8 @@ export const Navbar = ({ isOpen, toggle, darkModeToggler }) => {
             onClick={isMobile ? toggle : null}
             className={({ isActive }) =>
               isActive
-                ? 'shadow-lg shadow-blue-300 bg-blue-700 text-white lg:px-9 px-4 lg:py-2 py-1 rounded-full hover:shadow-blue-300 transition-shadow duration-150 ease-in-out'
-                : 'bg-blue-600 text-white lg:px-9 px-4 lg:py-2 py-1 rounded-full hover:shadow-md hover:shadow-blue-300 transition-shadow duration-150 ease-in-out'
+                ? 'shadow-lg shadow-blue-300 dark:shadow-blue-600/80 bg-blue-700 text-white lg:px-9 px-4 lg:py-2 py-1 rounded-full hover:shadow-blue-300 transition-shadow duration-150 ease-in-out'
+                : 'bg-blue-600 text-white lg:px-9 px-4 lg:py-2 py-1 rounded-full hover:shadow-md hover:shadow-blue-300 dark:hover:shadow-blue-600/50 transition-shadow duration-150 ease-in-out'
             }
             to='/apply'>
             <span className='font-medium lg:text-lg text-sm m-auto'>Apply</span>

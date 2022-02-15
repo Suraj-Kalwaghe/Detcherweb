@@ -96,7 +96,7 @@ export const Game = () => {
           <div className='shadow-lg'>{handleActiveGame(params.gameName)}</div>
           <button
             onClick={handleStart}
-            className='bg-blue-600 text-white lg:px-9 px-4 lg:py-2 py-1 rounded-full lg:w-[600px] w-full my-5 hover:shadow-lg hover:shadow-blue-300 transition-shadow duration-150 ease-in-out z-50'>
+            className='bg-blue-600 text-white lg:px-9 px-4 lg:py-2 py-1 rounded-full lg:w-[600px] w-full my-5 hover:shadow-lg hover:shadow-blue-300 dark:hover:shadow-blue-500/50 transition-shadow duration-150 ease-in-out z-50'>
             <span className='font-medium lg:text-lg text-sm m-auto'>
               {buttonText === '' ? 'Start' : buttonText}
             </span>

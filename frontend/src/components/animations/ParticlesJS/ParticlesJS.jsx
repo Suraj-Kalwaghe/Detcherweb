@@ -9,7 +9,8 @@ export const ParticlesJS = () => {
   };
 
   const particlesLoaded = container => {
-    console.log(container);
+    // console.log(container);
+    console.log('Particles Loaded');
   };
   return (
     <Particles

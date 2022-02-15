@@ -43,7 +43,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className='min-h-screen bg-white text-gray-900 dark:bg-slate-900 dark:text-white font-redHatDisplay'>
+    <div className='min-h-screen flex flex-col bg-white text-gray-900 dark:bg-slate-900 dark:text-white font-redHatDisplay'>
       <Helmet>
         <title>Detcher Tech Co.</title>
       </Helmet>

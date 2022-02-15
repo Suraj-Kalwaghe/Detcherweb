@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         redHatDisplay: ['Red Hat Display', 'sans-serif'],
+        bebasNeue: ['Bebas Neue', 'sans-serif'],
       },
     },
   },

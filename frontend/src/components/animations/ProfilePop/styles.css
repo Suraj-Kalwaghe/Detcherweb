@@ -13,7 +13,6 @@
   width: 400px;
 }
 .customContainer:after {
-  /* background-color: #f2f2f2; */
   content: '';
   height: 10px;
   position: absolute;
@@ -32,7 +31,7 @@
   top: -200px;
 }
 .circle {
-  background-color: #fee7d3;
+  /* background-color: #fee7d3; */
   border-radius: 50%;
   cursor: pointer;
   height: 380px;
@@ -73,14 +72,14 @@
   width: 160px;
 }
 .name {
-  color: #404245;
+  color: inherit;
   font-size: 24px;
   font-weight: 600;
   margin-top: 16px;
   text-align: center;
 }
 .title {
-  color: #6e6e6e;
+  color: inherit;
   font-family: arial;
   font-size: 14px;
   font-style: italic;

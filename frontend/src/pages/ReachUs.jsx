@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 
+// import { useDatabase } from '../hooks';
 import { Container } from '../components';
 
 export const ReachUs = () => {
@@ -9,16 +10,17 @@ export const ReachUs = () => {
   const [message, setMessage] = useState('');
   const [formMessage, setFormMessage] = useState('');
 
-  async function handleFormSubmit(data) {
-    const response = await axios.post('/api/v1', data);
-    if (response.statusText === 'OK')
-      setFormMessage('Form Submitted Successfully');
-    else setFormMessage(`Error Occured ${response.status}`);
-  }
+  // const { handleDB } = useDatabase();
+
+  // async function handleFormSubmit(data) {
+  //   if (handleDB('post', { name: name, email: email, message: message }))
+  //     setFormMessage('Form Submitted Successfully');
+  //   else setFormMessage(`Error Occured`);
+  // }
 
   const handleForm = e => {
     e.preventDefault();
-    handleFormSubmit({ name: name, email: email, message: message });
+    // handleFormSubmit({ name: name, email: email, message: message });
     setName('');
     setEmail('');
     setMessage('');

@@ -46,6 +46,10 @@ export default function App() {
     <div className='min-h-screen flex flex-col bg-white text-gray-900 dark:bg-slate-900 dark:text-white font-redHatDisplay'>
       <Helmet>
         <title>Detcher Tech Co.</title>
+        <script
+          async
+          src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3924625752687609'
+          crossorigin='anonymous'></script>
       </Helmet>
       <header className='flex flex-col items-center'>
         <Navbar
